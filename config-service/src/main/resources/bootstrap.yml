@@ -5,9 +5,13 @@ server:
 spring:
   cloud:
     config:
-      service:
+      server:
       git:
         url: https://github.com/MarcheloJacome/ProjMicroservicios.git
         searchPaths: config-data
         username: ${GIT_USER}
         password: ${GIT_PASSWORD}
+  security:
+    user:
+      name: root
+      password: s3cr3t

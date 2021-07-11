@@ -7,10 +7,11 @@ spring:
     config:
       server:
       git:
-        url: https://github.com/MarcheloJacome/ProjMicroservicios.git
+        uri: https://github.com/MarcheloJacome/ProjMicroservicios.git
         searchPaths: config-data
         username: ${GIT_USER}
         password: ${GIT_PASSWORD}
+        default-label: main
   security:
     user:
       name: root
